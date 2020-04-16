@@ -57,15 +57,21 @@ Input "Name of text file"; FileName
 RestartHere:
 Open FileName For Input As #f
 If Err>0 Then
-	Cls
-	Print 
-	Print "File Not Found. Press any key, or q to quit."
-	Sleep
-	Entry = LCase(InKey)
-	If Entry = "q" Then
-		End
+	' Check to see of ".txt" on end of filename was forgotten
+	FileName = FileName & ".txt"
+	Open FileName For Input As #f
+	If Err>0 Then
+		Cls
+		Print 
+		Print "File Not Found. Press any key, or q to quit."
+		Sleep
+		Entry = LCase(InKey)
+		If Entry = "q" Then
+			End
+		EndIf
+		GoTo GetFileName
 	EndIf
-	GoTo GetFileName
+	
 EndIf
 
 RateAgain:
