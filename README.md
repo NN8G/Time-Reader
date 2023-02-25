@@ -1,5 +1,5 @@
 # Time-Reader
-Display text file at specific word-per-minute rate
+A console-based Windows program that will display a text file at a user-specified word-per-minute rate
 
 The intended purpose of this program is for helping machine shorthand students create their own dictation for learning and practice.
 
