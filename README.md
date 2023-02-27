@@ -8,7 +8,7 @@ same directory as the executable.) Once that's entered it will ask for a word pe
 minute rate. After that it will count down from five and then begin to display the text file one word at a time
 at the chosen rate. Any keypress will pause the playback. A few stats are shown at the end.
 
-Written for FreeBasic. The source code is included in the download.
+Written in FreeBasic. The source code is included in the download.
 
 Instructions:
   1. Download and extract the folder from the .zip file.
